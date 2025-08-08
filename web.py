@@ -7,5 +7,6 @@ with open ("index.html", "r") as f:
 file = "index.html"
 realpath = os.path.realpath(file)
 browserpath = realpath.replace("#", "%23")
-print(realpath, browserpath)
+print(realpath)
+print(browserpath)
 webbrowser.open('file:///' + browserpath)
